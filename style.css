@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: url("bg2.jpeg") no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-box{
+    height: 410px;
+    width: 420px;
+    border: 1px solid #999;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.08);
+    display: flex;
+    padding: 50px;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.login-box h2{
+    color: #303030;  
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.login-box .box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.login-box .box input[type="text"],
+.login-box .box input[type="password"]{
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid #303030;
+    outline: none;
+    margin: 10px 0;
+    border-radius: 18px;
+    background: transparent;
+    height: 40px;
+    color: #303030;
+    transition: .6s;
+}
+
+.login-box .box input::placeholder{
+    color: #303030;
+}
+
+.login-box .box i{
+    position: absolute;
+    top: 35%;
+    right: 20px;
+    color: #303030;
+    transition: .6s;
+}
+
+
+input[type="text"]:focus i{
+    color: #fff;
+}
+
+span{
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    margin-top: 4px;
+}
+span,
+span a{
+    color: #303030;
+}
+
+.login-box .box input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+button{
+    background-color: #303030;
+    padding: 5px 15px;
+    width: 100%;
+    border: 1px solid #303030;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 25px;
+    transition: .8s;
+}
+
+button a{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: .6s;
+}
+
+button:hover{
+    background-color: #fff;
+}
+
+button:hover a{
+    color: #303030;
+}
+
+#register{
+    margin-top: 5px;
+    color: #1c1c1c;
+}
+
+#register strong{
+    margin-left: 8px;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+@media(max-width:1100px){
+    .container{
+        height: 750px;
+        background-size: cover;
+    }
+    .login-box{
+        height: 430px;
+        width: 390px;
+    }
+}
